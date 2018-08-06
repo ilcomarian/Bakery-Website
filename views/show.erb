@@ -1,16 +1,16 @@
-
- 
+<% @str2.each do |x| %>
  <div class="card" style="width: 18rem;">
-          <img class="card-img-top" src='./img/k1.jpg'>
+          <img class="card-img-top" src="<%=x.photo%>">
           <div class="card-body">
             <h5 class="card-title">
-              <%=@name%>
+              <%=x.name%>
             </h5>
             <p class="card-text">
-              <%=@des%>
+              <%=x.description%>
             </p>
             <a href="#" class="btn btn-primary">
-              <%=@price%>
+              <%=x.price%>
             </a>
           </div>
       </div>
+  <% end %>
