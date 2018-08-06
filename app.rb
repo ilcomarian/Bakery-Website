@@ -4,14 +4,14 @@ require "sinatra/reloader"
 require './k.rb'
 
 
-cookie = @cookie
-muffin = @muffincookie
-cookie = @cookie
-
+# @cookie = @cookie
+# @muffin = @muffincookie
+# @cake = @cake
 
 get '/' do
-@all = [cookie,muffin,cookie] 
-   erb :rander
+  @arr = [@@cookie,@@muffin,@@cake]
+
+   erb :render
   
 end
 

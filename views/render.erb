@@ -1,5 +1,5 @@
-
- <% @all.each do |x| %>
+<%@arr.each do |i| %>
+ <% i.each do |x| %>
  <div class="card" style="width: 18rem;">
           <img class="card-img-top" src="<%=x.photo%>">
           <div class="card-body">
@@ -14,4 +14,5 @@
             </a>
           </div>
       </div>
+  <% end %>
   <% end %>
