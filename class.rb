@@ -1,39 +1,22 @@
+class Baked
+  attr_accessor :name, :description, :price, :photo
 
-
-class Cookie
-    attr_accessor :name, :description, :price
-
-    def initialize(name, description, price)
-      @name = name 
-      @description = description 
-      @price = price 
-    
-    end
-  
-  end
-
-class Cake
-  attr_accessor :name, :description, :price
-
-  def initialize(name, description, price)
+  def initialize(name, description, price,photo)
     @name = name 
     @description = description 
     @price = price 
-  
-  end
+    @photo= photo
   end
 
-class Muffin
-  attr_accessor :name, :description, :price
+end
 
-  def initialize(name, description, price)
-    @name = name 
-    @description = description 
-    @price = price 
-  
+class Cookie < Baked
   end
-  
 
+class Cake < Baked
+  end
+
+class Muffin < Baked
   end
 
  
