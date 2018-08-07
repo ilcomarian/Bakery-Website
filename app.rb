@@ -2,12 +2,8 @@ require 'sinatra'
 require "sinatra/reloader"
 
 require './k.rb'
-require 'simatic'
- 
 
-# @cookie = @cookie
-# @muffin = @muffincookie
-# @cake = @cake
+ 
 
 get '/' do
   @arr = [@@cookie,@@muffin,@@cake]
@@ -15,26 +11,18 @@ get '/' do
    erb :render
   
 end
+
 post '/search' do
   @str2 = nil
   str = params[:query]
-  if str == 'cookie'
-  @str2 = @@cookie
-  elsif str == 'muffin'
-    @str2 = @@muffin
-  elsif str == 'cake'
-    @str2 = @@cake
-
+    if str == 'cookie'
+        @str2 = @@cookie
+    elsif str == 'muffin'
+        @str2 = @@muffin
+    elsif str == 'cake'
+        @str2 = @@cake
   end
 
    erb :show
   
 end
-# post "/:name" do
-#   @select = params[:query]
-  
- 
-
- 
-#   erb :show
-# end

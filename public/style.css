@@ -4,7 +4,7 @@
   box-shadow: -3px 1px 20px 8px var(--gray); }
 
 .txt {
-  margin-bottom: 20%;
+  margin-bottom: 300px;
   text-shadow: -9px 5px 6px #583232;
   font-size: 40px; }
 
@@ -137,3 +137,14 @@ h3 {
   transform: translate3d(0, 0, 0); }
 
 /*# sourceMappingURL=style.css.map */
+.primary-textarea.md-form label.active {
+  color: #4285F4;
+}
+
+ #map{
+   width:100%;
+   margin-bottom: 30px;
+ }
+ #contact-name{
+   margin-bottom: 20px;
+ }
