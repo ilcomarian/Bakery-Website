@@ -2,7 +2,8 @@ require 'sinatra'
 require "sinatra/reloader"
 
 require './k.rb'
-
+require 'simatic'
+ 
 
 # @cookie = @cookie
 # @muffin = @muffincookie
