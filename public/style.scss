@@ -17,11 +17,14 @@
     color: black;
     font-size: 30px;
  }
+ #btn{
+   display: flex;
+ }
 }
 .row{
     align-self: center;
-    margin-bottom: 40px;
-    // margin-left: 40px;
+    margin-bottom:40px;
+    margin-top: 40px;
 }
   /* about */
 
@@ -33,6 +36,7 @@
     position: relative;
     text-align: center;
     cursor: default;
+    margin-bottom: 30px;
     
   }
   
@@ -160,3 +164,8 @@
     -webkit-transform: translate3d(0,0,0);
     transform: translate3d(0,0,0);
   }
+
+.card{
+  margin-bottom: 30px;
+}
+  

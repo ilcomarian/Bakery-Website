@@ -12,16 +12,22 @@ get '/' do
   
 end
 
-post '/search' do
-  @str2 = nil
-  str = params[:query]
-    if str == 'cookie'
-        @str2 = @@cookie
-    elsif str == 'muffin'
-        @str2 = @@muffin
-    elsif str == 'cake'
-        @str2 = @@cake
-  end
+
+get '/cookie' do
+    @str2 = @@cookie
+
+   erb :show
+  
+end
+
+get '/cake' do
+    @str2 = @@cake
+
+   erb :show
+  
+end
+get '/muffin' do
+    @str2 =  @@muffin
 
    erb :show
   
