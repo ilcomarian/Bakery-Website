@@ -12,10 +12,16 @@
   font-family: 'Dancing Script', cursive;
   margin-left: 8%;
   color: black;
-  font-size: 30px; }
-.navbar #btn {
-  display: flex; }
+  font-size: 30px; 
+}
+ 
+  .navbar #btn {
+  display: flex;
+}
 
+  .carousel-caption{
+    margin-bottom: 300px;
+  }
 .row {
   align-self: center;
   margin-bottom: 40px;
@@ -172,4 +178,9 @@ h3 {
 .zoomIn {
   
   animation: zoomIn  5s;
+}
+
+
+.form-control{
+  margin-bottom: 20px;
 }
