@@ -1,6 +1,6 @@
 require 'sinatra'
 require "sinatra/reloader"
-
+require 'httparty'
 require './k.rb'
 
  
@@ -30,5 +30,15 @@ get '/muffin' do
     @str2 =  @@muffin
 
    erb :show
+  
+end
+
+post '/search' do
+   
+  response = HTTParty.get("https://api.edamam.com/search")
+       
+  @select = params[:query]
+
+   erb :search
   
 end
